@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.header{
+  width: 100%;
+  padding: 20px 5%;
+  background: rgb(0,18,255);
+  background: linear-gradient(0deg, rgba(0,18,255,1) 0%, rgba(183,0,255,1) 30%);
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  width: 20%;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* news article css */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.news-articles{
+  width: 100%;
+  padding: 30px 5%;
+  background: rgb(183,0,255);
+  background: linear-gradient(0deg, rgba(183,0,255,1) 0%, rgba(0,18,255,1) 60%);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4%;
+  row-gap: 20px;
+}
+.news{
+  width: 22%;
+  padding: 20px;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  row-gap: 10px;
+  border-radius: 5px;
+}
+
+.news-img{
+  width: 100%;
+  height: 200px;
+  /* background-color: blue; */
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.new-img img{
+  min-width: 100%;
+  max-width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.source{
+  display: flex;
+  justify-content: space-between;
+  color: gray;
 }
